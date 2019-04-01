@@ -1,0 +1,12 @@
+nav ul{
+   list-style: none; 
+   display: flex;
+   justify-content: end;
+}
+nav ul li a {
+    text-decoration: none;
+    color : black;
+}
+nav ul li{
+    padding : 0 2% 0 2%;
+}
