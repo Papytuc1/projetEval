@@ -21,7 +21,7 @@
       uc: 'livre'
     },
     function (data){
-      
+      console.log(data)
       result=JSON.parse(data)
       console.log(result);
       if(result.reservation>0){
