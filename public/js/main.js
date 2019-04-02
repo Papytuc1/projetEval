@@ -13,4 +13,15 @@
   $.when(makeRequest("project=full")).done(function(project){
     console.log(project.items)
   }) */
-  
+
+/* $(".img-book").click(function () {
+  $.post(
+    'controler/ajax.php', {
+      id: $(this).data("id"),
+      uc: 'livre'
+    },
+    function (data) {
+
+    }
+  )
+}); */

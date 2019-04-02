@@ -12,10 +12,12 @@ body {
 section {
   margin: 1% auto !important; }
 
+ul {
+  list-style: none; }
+
 nav ul {
   background: #013156;
   height: 10vh;
-  list-style: none;
   display: flex;
   justify-content: end;
   align-items: center; }
@@ -40,6 +42,35 @@ nav ul li {
 
 .container-home h1, p {
   text-align: center; }
+
+.container-grid ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto; }
+
+.container-books ul li {
+  display: flex;
+  justify-content: center;
+  height: 65vh;
+  background: #9c9c9c;
+  border-radius: 10px;
+  margin: 1%; }
+
+.container-books ul li a figure {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.container-books ul li a figure figcaption h2 {
+  text-align: center;
+  font-size: 2rem; }
+
+.img-book {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 40vh; }
 
 /*************** FOOTER ************/
 footer {

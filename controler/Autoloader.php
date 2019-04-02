@@ -3,7 +3,7 @@ class Autoloader
 {
     static function autoload($className)
     {
-        include "modele/" . $className . ".php";
+        include "../modele/" . $className . ".php";
     }
     static function register()
     {

@@ -9,11 +9,12 @@ class ClassLivre
     private $publishingDate;
     private $img;
     private $stock;
+    private $genre;
 
     /**
      * Get the value of id
      */ 
-    public function getId()
+    public function id()
     {
         return $this->id;
     }
@@ -33,7 +34,7 @@ class ClassLivre
     /**
      * Get the value of title
      */ 
-    public function getTitle()
+    public function title()
     {
         return $this->title;
     }
@@ -53,7 +54,7 @@ class ClassLivre
     /**
      * Get the value of author
      */ 
-    public function getAuthor()
+    public function author()
     {
         return $this->author;
     }
@@ -73,7 +74,7 @@ class ClassLivre
     /**
      * Get the value of resume
      */ 
-    public function getResume()
+    public function resume()
     {
         return $this->resume;
     }
@@ -93,7 +94,7 @@ class ClassLivre
     /**
      * Get the value of price
      */ 
-    public function getPrice()
+    public function price()
     {
         return $this->price;
     }
@@ -113,7 +114,7 @@ class ClassLivre
     /**
      * Get the value of publishingDate
      */ 
-    public function getPublishingDate()
+    public function publishingDate()
     {
         return $this->publishingDate;
     }
@@ -133,7 +134,7 @@ class ClassLivre
     /**
      * Get the value of img
      */ 
-    public function getImg()
+    public function img()
     {
         return $this->img;
     }
@@ -153,7 +154,7 @@ class ClassLivre
     /**
      * Get the value of stock
      */ 
-    public function getStock()
+    public function stock()
     {
         return $this->stock;
     }
@@ -169,11 +170,32 @@ class ClassLivre
 
         return $this;
     }
+     /**
+     * Get the value of genre
+     */ 
+    public function genre()
+    {
+        return $this->genre;
+    }
+
+    /**
+     * Set the value of genre
+     *
+     * @return  self
+     */ 
+    public function setGenre($genre)
+    {
+        $this->genre = $genre;
+
+        return $this;
+    }
     public function toArray()
     {
         return ["id" => $this->id(), "title" => $this->title(), "author" => $this->author(), 
         "resume" => $this->resume(), "price" => $this->price(), 
-        "publishingDate" => $this->publishingDate(),"img" =>  $this->image(), "stock" => $this->stock()];
+        "publishingDate" => $this->publishingDate(),"img" =>  $this->image(), "stock" => $this->stock(), "genre" => $this->genre()];
     }
+
+   
 }
 
