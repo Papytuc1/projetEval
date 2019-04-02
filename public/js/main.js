@@ -14,14 +14,21 @@
     console.log(project.items)
   }) */
 
-/* $(".img-book").click(function () {
+ $(".booking").click(function () {
   $.post(
-    'controler/ajax.php', {
+    '../controler/ajax.php', {
       id: $(this).data("id"),
       uc: 'livre'
     },
-    function (data) {
-
+    function (data){
+      
+      result=JSON.parse(data)
+      console.log(result);
+      if(result.reservation>0){
+      alert("votre livre est reservé");
+      }else{
+        alert("votre livre ne doit plus être en stock");
+      }
     }
   )
-}); */
+}); 

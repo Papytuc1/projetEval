@@ -5,9 +5,14 @@ if (!$loc) {
 }
 include_once '../controler/Autoloader.php';
 Autoloader::register();
+
 switch($loc){
     case "livres":
     include_once "../controler/controler-livres.php";
+    break;
+
+    case "un-livre":
+    include_once "../controler/controler-un-livre.php";
     break;
 
     default :
